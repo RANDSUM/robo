@@ -50,7 +50,7 @@ const buildEmbed = (
   amplifyHope: boolean,
   amplifyFear: boolean
 ): APIEmbed => {
-  const { result, rolls } = rollDaggerheart({
+  const { result } = rollDaggerheart({
     modifier: rollModifier,
     rollingWith,
     amplifyHope,
@@ -58,7 +58,7 @@ const buildEmbed = (
   });
 
   return new EmbedBuilder()
-    .setTitle(`You rolled a ${String(result)} with ${result.type}`)
+    .setTitle(`You rolled a ${String(result.total)} with ${result.type}`)
     .setFields(fields(result, rollingWith))
     .setColor(getColor(result.type))
     .setFooter(embedFooterDetails)
