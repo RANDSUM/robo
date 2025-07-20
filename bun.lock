@@ -5,12 +5,12 @@
       "name": "@randsum/robo",
       "dependencies": {
         "@discord/embedded-app-sdk": "^1.9.0",
-        "@randsum/blades": "~0.23.0",
-        "@randsum/daggerheart": "~0.23.0",
-        "@randsum/fifth": "~0.23.0",
-        "@randsum/roller": "~0.23.0",
-        "@randsum/root-rpg": "~0.23.0",
-        "@randsum/salvageunion": "~0.23.0",
+        "@randsum/blades": "^0.24.3",
+        "@randsum/daggerheart": "^0.24.3",
+        "@randsum/fifth": "^0.24.3",
+        "@randsum/roller": "^0.24.3",
+        "@randsum/root-rpg": "^0.24.3",
+        "@randsum/salvageunion": "^0.24.3",
         "@robojs/patch": "^0.2.1",
         "discord.js": "^14.21.0",
         "extensionless": "^1.9.9",
@@ -22,7 +22,7 @@
         "@types/node": "^24.0.15",
         "eslint": "^9.31.0",
         "globals": "^16.3.0",
-        "jiti": "^2.0.0",
+        "jiti": "^2.4.2",
         "prettier": "^3.6.2",
         "typescript": "^5.8.3",
         "typescript-eslint": "^8.37.0",
@@ -76,17 +76,17 @@
 
     "@nodelib/fs.walk": ["@nodelib/fs.walk@1.2.8", "", { "dependencies": { "@nodelib/fs.scandir": "2.1.5", "fastq": "^1.6.0" } }, "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg=="],
 
-    "@randsum/blades": ["@randsum/blades@0.23.0", "", { "dependencies": { "@randsum/roller": "~0.23.0" } }, "sha512-xwFDtoOnG04GN/9pY1n/VZK/tIM8ptGM2P+4eMtWNS6gZLhYSAVQIF1V101Vi8fKScl1QUVA4ozSRLl5u1CkWw=="],
+    "@randsum/blades": ["@randsum/blades@0.24.3", "", { "dependencies": { "@randsum/roller": "~0.24.3" } }, "sha512-93XW6rM70bjWscd1vYK7DePprHW3VVmA+b3Eu476IKmE1rXA9ZIj50qW6mNjisCMZLqju+dfJVUsOGDZGQt5+g=="],
 
-    "@randsum/daggerheart": ["@randsum/daggerheart@0.23.0", "", { "dependencies": { "@randsum/roller": "~0.23.0" } }, "sha512-NZMufiwlvF9URKGbA1cV1T/7biiy5zvNGGFRtkWedAwGweUHLWWMAFTej+SNguT8zkiIOp7+q4v1ZEJTwoB8nw=="],
+    "@randsum/daggerheart": ["@randsum/daggerheart@0.24.3", "", { "dependencies": { "@randsum/roller": "~0.24.3" } }, "sha512-VZMBt0xOoYXMsZ/+MfgETP1u6KK51f+ECEHZ9DiC493hhZaLWjwy9Celze48R0qRdVm8e5Qt1glJQO6WsT91/w=="],
 
-    "@randsum/fifth": ["@randsum/fifth@0.23.0", "", { "dependencies": { "@randsum/roller": "~0.23.0" } }, "sha512-UBdcpd9Rmm1cNlLSLSu6HXdvCicI2NyfXkU13w4VF6J2TetSlSWFO5oASIG8WgGWs8PXbW+BJK6foeAUnm7ZVQ=="],
+    "@randsum/fifth": ["@randsum/fifth@0.24.3", "", { "dependencies": { "@randsum/roller": "~0.24.3" } }, "sha512-TyQRalvAAiwGDFx+7CWdIiXi8dUR78AMxhLJwMxRbfKBIxR0gnZlBbDIz4DNgtssvGL8ZgFfSXY7pdnFhAoY7A=="],
 
-    "@randsum/roller": ["@randsum/roller@0.23.0", "", { "bin": { "@randsum/roller": "bin/randsum" } }, "sha512-pDvrxljzT64RJU24QWEd7g3GTJAqWwa5sHEltbKd+zZK9ZERC9GVwsr4J+ZCZLW3MrQQlBFisiFY3l/bXvd/6A=="],
+    "@randsum/roller": ["@randsum/roller@0.24.3", "", { "bin": { "@randsum/roller": "bin/randsum" } }, "sha512-Nz1PDqQR5zHXZZmhdd6vYmMmPo7tIDe42nALrpDmxv2HrDjiTxFMY2fRmI8QrJA3aXzREG8miQ+JHx205av76A=="],
 
-    "@randsum/root-rpg": ["@randsum/root-rpg@0.23.0", "", { "dependencies": { "@randsum/roller": "~0.23.0" } }, "sha512-NRUTaaGwvzvd42Ayz1T/e6FwsOXAsf6lnNdx9LivVA0JalMqsIulmXpdRCMokBFmNZqvFb4aaxr9al1RaMPxbg=="],
+    "@randsum/root-rpg": ["@randsum/root-rpg@0.24.3", "", { "dependencies": { "@randsum/roller": "~0.24.3" } }, "sha512-m26IiTM5m3ysQHwlmAxLQi4O1MsTIBxIqgEXYsj2QUh9e+B+tBXm/0CIF2inquSO0Jw9WDh4DV7tpc8B59jhzg=="],
 
-    "@randsum/salvageunion": ["@randsum/salvageunion@0.23.0", "", { "dependencies": { "@randsum/roller": "~0.23.0" } }, "sha512-5Jwy5OXsZXtwwL18k5wHLCNS+y/Zj+GFgf99alNh/0IyqBaJ7Ih9x5k5voRK9ZfzKicNGKXX8DgpL9kj7kdLrw=="],
+    "@randsum/salvageunion": ["@randsum/salvageunion@0.24.3", "", { "dependencies": { "@randsum/roller": "~0.24.3" } }, "sha512-hf/vkjizT0WM56jQIUmcHwwgO0LYk1a1HzgjHQNlyv1+2K5efiNVI4i0xlTZxUdxXR/8Z42/wq5t5ow85klnmQ=="],
 
     "@robojs/patch": ["@robojs/patch@0.2.1", "", { "peerDependencies": { "robo.js": "^0.10.27" }, "optionalPeers": ["robo.js"] }, "sha512-gCNMabWkzbzu4+NjQzBoL80JsMzSkVJgYBJHZkMM6HDxNeRJk8mSW7/Em84lqijfQgM6rwZVL/umR9051P+Kcw=="],
 

@@ -18,7 +18,7 @@ export const config = createCommandConfig({
 })
 
 const buildEmbed = (notationArg: string): APIEmbed => {
-	const { valid, description, digested } = validateNotation(notationArg)
+	const { valid, description, options } = validateNotation(notationArg)
 
 	if (!valid) {
 		return new EmbedBuilder()
@@ -34,7 +34,7 @@ const buildEmbed = (notationArg: string): APIEmbed => {
 			.toJSON()
 	}
 
-	const result = roll(digested)
+	const result = roll(options)
 
 	const total = `**${String(result.total)}**`
 
