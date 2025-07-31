@@ -10,7 +10,7 @@
         "@randsum/fifth": "^0.26.7",
         "@randsum/roller": "^0.26.11",
         "@randsum/root-rpg": "^0.26.7",
-        "@randsum/salvageunion": "^0.26.7",
+        "@randsum/salvageunion": "^0.27.0",
         "@robojs/patch": "^0.2.1",
         "discord.js": "^14.21.0",
         "extensionless": "^1.9.9",
@@ -86,7 +86,7 @@
 
     "@randsum/root-rpg": ["@randsum/root-rpg@0.26.7", "", { "dependencies": { "@randsum/roller": "~0.26.7" } }, "sha512-ytNLRmfSafSS919BW+Z975sGRdTHTDFiGLYReDpJ1EQQPPscrvCQ54bI/J9MHlvqPKSpiinlQfzbqvPUrwPkGg=="],
 
-    "@randsum/salvageunion": ["@randsum/salvageunion@0.26.7", "", { "dependencies": { "@randsum/roller": "~0.26.7" } }, "sha512-URSyJD71r82sCq59Mc7K5jbsAlErXNS3Pqd7jPaBD7hjmpiqaFpzB7W3sSXjbR340HBSACbo3ztlB2QEcbsNOA=="],
+    "@randsum/salvageunion": ["@randsum/salvageunion@0.27.0", "", { "dependencies": { "@randsum/roller": "~0.26.11" } }, "sha512-RVGnr7Damg1lWPPVMOdJxHW8FS5IjbSXyEQ0jOHziCyehLgU8IwtnwZetvln6TuUKaP9c+FfwFkBcaWsIAr77g=="],
 
     "@robojs/patch": ["@robojs/patch@0.2.1", "", { "peerDependencies": { "robo.js": "^0.10.27" }, "optionalPeers": ["robo.js"] }, "sha512-gCNMabWkzbzu4+NjQzBoL80JsMzSkVJgYBJHZkMM6HDxNeRJk8mSW7/Em84lqijfQgM6rwZVL/umR9051P+Kcw=="],
 

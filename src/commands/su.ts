@@ -22,18 +22,40 @@ export const config: CommandConfig = {
 	]
 }
 
-function getColor(type: SalvageUnionHit): number {
+function getColor(type: string): number {
 	switch (type) {
+		case '20':
 		case 'Nailed It':
 			return Colors.Green
+		case '19':
+		case '18':
+		case '17':
+		case '16':
+		case '15':
+		case '14':
+		case '13':
+		case '12':
+		case '11':
 		case 'Success':
 			return Colors.DarkGreen
+		case '10':
+		case '9':
+		case '8':
+		case '7':
+		case '6':
 		case 'Tough Choice':
 			return Colors.Yellow
+		case '5':
+		case '4':
+		case '3':
+		case '2':
 		case 'Failure':
 			return Colors.Red
+		case '1':
 		case 'Cascade Failure':
 			return Colors.DarkRed
+		default:
+			return Colors.Greyple
 	}
 }
 
@@ -42,8 +64,11 @@ export function buildEmbed(table: SalvageUnionTableName): APIEmbed {
 		result: { hit, label, description, roll: total }
 	} = rollTable(table)
 
+	const titleBase = `${String(total)}`
+	const title = label === hit ? titleBase : `${titleBase} - __**${label}**__`
+
 	return new EmbedBuilder()
-		.setTitle(`${String(total)} - __**${label}**__`)
+		.setTitle(title)
 		.setColor(getColor(hit))
 		.setDescription(description)
 		.addFields({ name: 'Table', value: table, inline: true })
