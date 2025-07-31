@@ -32,12 +32,12 @@
 		"upgrade": "sage upgrade"
 	},
 	"dependencies": {
-		"@randsum/roller": "^0.26.2",
-		"@randsum/blades": "^0.26.2",
-		"@randsum/daggerheart": "^0.26.2",
-		"@randsum/fifth": "^0.26.2",
-		"@randsum/root-rpg": "^0.26.2",
-		"@randsum/salvageunion": "^0.26.2",
+		"@randsum/roller": "^0.26.11",
+		"@randsum/blades": "^0.26.7",
+		"@randsum/daggerheart": "^0.26.7",
+		"@randsum/fifth": "^0.26.7",
+		"@randsum/root-rpg": "^0.26.7",
+		"@randsum/salvageunion": "^0.26.7",
 		"@discord/embedded-app-sdk": "^1.9.0",
 		"@robojs/patch": "^0.2.1",
 		"robo.js": "^0.10.30",
@@ -45,12 +45,12 @@
 		"extensionless": "^1.9.9"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.31.0",
-		"@swc/core": "^1.13.1",
-		"@types/node": "^24.0.15",
-		"eslint": "^9.31.0",
+		"@eslint/js": "^9.32.0",
+		"@swc/core": "^1.13.3",
+		"@types/node": "^24.1.0",
+		"eslint": "^9.32.0",
 		"globals": "^16.3.0",
-		"jiti": "^2.4.2",
+		"jiti": "^2.5.1",
 		"prettier": "^3.6.2",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.38.0"
