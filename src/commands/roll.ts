@@ -18,13 +18,12 @@ export const config = createCommandConfig({
 })
 
 const buildEmbed = (notationArg: string): APIEmbed => {
-	const { valid, description, options } = validateNotation(notationArg)
+	const validation = validateNotation(notationArg)
 
-	if (!valid) {
+	if (!validation.valid) {
 		return new EmbedBuilder()
 			.setTitle('Error')
 			.setDescription(`"**${notationArg}**" is not valid dice notation.`)
-			.addFields(description.map((d) => ({ name: '', value: d, inline: true })))
 			.addFields({
 				name: 'Learn More',
 				value:
@@ -34,7 +33,7 @@ const buildEmbed = (notationArg: string): APIEmbed => {
 			.toJSON()
 	}
 
-	const result = roll(options)
+	const result = roll(...validation.options)
 
 	const total = `**${String(result.total)}**`
 
