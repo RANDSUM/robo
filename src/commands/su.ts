@@ -65,7 +65,7 @@ export function buildEmbed(table: SalvageUnionTableName): APIEmbed {
 	} = rollTable(table)
 
 	const titleBase = `${String(total)}`
-	const title = label === hit ? titleBase : `${titleBase} - __**${label}**__`
+	const title = label === description ? titleBase : `${titleBase} - __**${label}**__`
 
 	return new EmbedBuilder()
 		.setTitle(title)
