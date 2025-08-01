@@ -65,12 +65,13 @@ export function buildEmbed(table: SalvageUnionTableName): APIEmbed {
 	} = rollTable(table)
 
 	const titleBase = `${String(total)}`
-	const title = label === description ? titleBase : `${titleBase} - __**${label}**__`
+	
+	const title = description === '' ? titleBase : `${titleBase} - __**${label}**__`
 
 	return new EmbedBuilder()
 		.setTitle(title)
 		.setColor(getColor(hit))
-		.setDescription(description)
+		.setDescription(description === '' ? label : description)
 		.addFields({ name: 'Table', value: table, inline: true })
 		.setFooter(embedFooterDetails)
 		.toJSON()
