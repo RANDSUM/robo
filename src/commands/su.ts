@@ -1,11 +1,11 @@
 import type { APIEmbed, ChatInputCommandInteraction } from 'discord.js'
 import { Colors, EmbedBuilder } from 'discord.js'
 import type { CommandConfig, CommandOptions, CommandResult } from 'robo.js'
-import type { SalvageUnionHit, SalvageUnionTableName } from '@randsum/salvageunion'
-import { AllRollTables, rollTable } from '@randsum/salvageunion'
+import type { SalvageUnionTableName } from '@randsum/salvageunion'
+import { rollTable, SALVAGE_UNION_TABLE_NAMES } from '@randsum/salvageunion'
 import { embedFooterDetails } from '../core/constants'
 
-const suChoices = Object.keys(AllRollTables).map((table) => ({
+const suChoices = Object.keys(SALVAGE_UNION_TABLE_NAMES).map((table) => ({
 	name: table,
 	value: table
 }))
@@ -61,16 +61,14 @@ function getColor(type: string): number {
 
 export function buildEmbed(table: SalvageUnionTableName): APIEmbed {
 	const {
-		result: { hit, label, description, roll: total }
+		result: { label, description, roll: total }
 	} = rollTable(table)
 
-	const titleBase = `${String(total)}`
-	
-	const title = description === '' ? titleBase : `${titleBase} - __**${label}**__`
+	const title = `**${String(total)}**`
 
 	return new EmbedBuilder()
 		.setTitle(title)
-		.setColor(getColor(hit))
+		.setColor(getColor(String(total)))
 		.setDescription(description === '' ? label : description)
 		.addFields({ name: 'Table', value: table, inline: true })
 		.setFooter(embedFooterDetails)
@@ -83,5 +81,6 @@ export default async (
 ): Promise<CommandResult> => {
 	const tableName: SalvageUnionTableName = (table ?? 'Core Mechanic') as SalvageUnionTableName
 
-	await interaction.reply({ embeds: [buildEmbed(tableName)] })
+	await interaction.deferReply()
+	await interaction.editReply({ embeds: [buildEmbed(tableName)] })
 }

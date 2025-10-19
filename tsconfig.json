@@ -2,14 +2,11 @@
 	"compilerOptions": {
 		"target": "ESNext",
 		"lib": ["esnext"],
-		"baseUrl": ".",
-		"paths": {
-			"~/*": ["src/*"]
-		},
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
 		"esModuleInterop": true,
 		"module": "esnext",
 		"moduleResolution": "node",

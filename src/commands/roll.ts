@@ -64,5 +64,6 @@ export default async (
 	interaction: ChatInputCommandInteraction,
 	{ notation }: CommandOptions<typeof config>
 ): Promise<CommandResult> => {
-	await interaction.reply({ embeds: [buildEmbed(String(notation))] })
+	await interaction.deferReply()
+	await interaction.editReply({ embeds: [buildEmbed(String(notation))] })
 }

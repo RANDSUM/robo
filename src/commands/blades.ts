@@ -137,7 +137,8 @@ export default async (
 	interaction: ChatInputCommandInteraction,
 	{ dice }: CommandOptions<typeof config>
 ): Promise<CommandResult> => {
-	await interaction.reply({
+	await interaction.deferReply()
+	await interaction.editReply({
 		embeds: [buildEmbed(dice, interaction.user.displayName)]
 	})
 }

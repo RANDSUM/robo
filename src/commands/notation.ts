@@ -100,5 +100,6 @@ const baseEmbed = new EmbedBuilder()
 	.toJSON()
 
 export default async (interaction: ChatInputCommandInteraction): Promise<CommandResult> => {
-	await interaction.reply({ embeds: [baseEmbed] })
+	await interaction.deferReply()
+	await interaction.editReply({ embeds: [baseEmbed] })
 }

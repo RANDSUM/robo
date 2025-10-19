@@ -32,27 +32,27 @@
 		"upgrade": "sage upgrade"
 	},
 	"dependencies": {
-		"@discord/embedded-app-sdk": "^1.9.0",
-		"@randsum/blades": "^0.26.7",
-		"@randsum/daggerheart": "^0.26.7",
-		"@randsum/fifth": "^0.26.7",
-		"@randsum/roller": "^0.26.11",
-		"@randsum/root-rpg": "^0.26.7",
-		"@randsum/salvageunion": "^0.27.0",
+		"@discord/embedded-app-sdk": "^2.4.0",
+		"@randsum/blades": "^0.27.0",
+		"@randsum/daggerheart": "^0.27.0",
+		"@randsum/fifth": "^0.27.0",
+		"@randsum/roller": "^0.27.0",
+		"@randsum/root-rpg": "^0.27.0",
+		"@randsum/salvageunion": "^0.31.0",
 		"@robojs/patch": "^0.2.1",
-		"discord.js": "^14.21.0",
-		"extensionless": "^1.9.9",
-		"robo.js": "^0.10.30"
+		"discord.js": "^14.23.2",
+		"extensionless": "^2.0.2",
+		"robo.js": "^0.10.31"
 	},
 	"devDependencies": {
-		"@eslint/js": "^9.33.0",
-		"@swc/core": "^1.13.3",
-		"@types/node": "^24.2.1",
-		"eslint": "^9.33.0",
-		"globals": "^16.3.0",
-		"jiti": "^2.5.1",
+		"@eslint/js": "^9.38.0",
+		"@swc/core": "^1.13.5",
+		"@types/node": "^24.8.1",
+		"eslint": "^9.38.0",
+		"globals": "^16.4.0",
+		"jiti": "^2.6.1",
 		"prettier": "^3.6.2",
-		"typescript": "^5.9.2",
-		"typescript-eslint": "^8.39.1"
+		"typescript": "^5.9.3",
+		"typescript-eslint": "^8.46.1"
 	}
 }

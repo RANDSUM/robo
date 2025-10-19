@@ -108,7 +108,8 @@ export default async (
 	interaction: ChatInputCommandInteraction,
 	{ modifier, rollingwith, amplifyhope, amplifyfear }: CommandOptions<typeof config>
 ): Promise<CommandResult> => {
-	await interaction.reply({
+	await interaction.deferReply()
+	await interaction.editReply({
 		embeds: [
 			buildEmbed(
 				modifier ? Number(modifier) : 0,

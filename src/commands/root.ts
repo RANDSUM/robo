@@ -103,7 +103,8 @@ export default async (
 	interaction: ChatInputCommandInteraction,
 	{ modifier }: CommandOptions<typeof config>
 ): Promise<CommandResult> => {
-	await interaction.reply({
+	await interaction.deferReply()
+	await interaction.editReply({
 		embeds: [handleroll(modifier, interaction.user.displayName)]
 	})
 }
