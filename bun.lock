@@ -81,7 +81,7 @@
 
     "@randsum/root-rpg": ["@randsum/root-rpg@0.27.0", "", { "dependencies": { "@randsum/roller": "~0.26.11" } }, "sha512-e1bahubwf9Sv/8CPwSQuY/V8yWPg2S//d1fmeDcYTQBR13Ebh46s5nLZ8fdjVFGaeMb3WR4dOHvXeckfQmHNYg=="],
 
-    "@randsum/salvageunion": ["@randsum/salvageunion@0.39.0", "", { "dependencies": { "@randsum/roller": "~0.27.0", "salvageunion-reference": "2.3.3" } }, "sha512-nj5MDCsjg8/fSfRgY3/b93jvlAhqgXxJ4UcGnCfg9alJsi0LDeoz1anCwgfYRXqlADaP5DwuhRT/SP4/x1veOw=="],
+    "@randsum/salvageunion": ["@randsum/salvageunion@0.41.0", "", { "dependencies": { "@randsum/roller": "~0.27.0", "salvageunion-reference": "2.3.4" } }, "sha512-GxtxKC9nA+Ktc0dhfTXeLfQTkXPlauvLffk/QOqmd445uJejsl6MHujFMSQhxeosg628FBtbPyJyGtjc6iQsdA=="],
 
     "@robojs/patch": ["@robojs/patch@0.2.1", "", { "peerDependencies": { "robo.js": "^0.10.27" }, "optionalPeers": ["robo.js"] }, "sha512-gCNMabWkzbzu4+NjQzBoL80JsMzSkVJgYBJHZkMM6HDxNeRJk8mSW7/Em84lqijfQgM6rwZVL/umR9051P+Kcw=="],
 
@@ -305,7 +305,7 @@
 
     "robo.js": ["robo.js@0.10.31", "", { "peerDependencies": { "@swc/core": "^1.3.41", "discord.js": "^14.0.0", "keyv": ">=4.0.0", "typescript": "^5.0.0", "vite": "^5.0.0" }, "optionalPeers": ["@swc/core", "keyv", "typescript", "vite"], "bin": { "robo": "dist/cli/index.js", "robox": "dist/cli/robox.js", "sage": "dist/cli/sage.js" } }, "sha512-9HSmJCQmRqmyqDfwX9zkMHT00iJ/g9u5T9d0hCZvidhmerGmjglHseCbZ4ltDI9R+Fns3zIbfjbpF7Aym2ZlwQ=="],
 
-    "salvageunion-reference": ["salvageunion-reference@2.3.3", "", {}, "sha512-LmzgB+rX1a4HfyBC7AsumJQXk5RXSA1VexEA4SmWMBcUo/xGvPJ3sEEd3A0Fz7jP+UUMwnuq0i8wZ7sf7uXu8w=="],
+    "salvageunion-reference": ["salvageunion-reference@2.3.4", "", {}, "sha512-woEoeGQ/OYX3mHrsZfsNwUD7iHVUpIQ04bAxzznXOHOPqVPJ9i040gvk3jQIanMDeFJ3bX9kPVH3QW+jIVPFiA=="],
 
     "semver": ["semver@7.7.2", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA=="],
 
